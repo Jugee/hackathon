@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Layout from "antd/lib/layout/layout";
+import "./App.css";
+import Header from "./component/Header";
+import Content from "./component/Content";
+import Footer from "./component/Footer";
+import ChartBar from "./component/ChartBar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id="overlayer" />
+      <div className="loader">
+        <div className="spinner-border text-primary" role="status">
+          <span className="sr-only">Loading...</span>
+        </div>
+      </div>
+      <div className="site-wrap" id="home-section">
+        <div className="site-mobile-menu site-navbar-target">
+          <div className="site-mobile-menu-header">
+            <div className="site-mobile-menu-close mt-3">
+              <span className="icon-close2 js-menu-toggle" />
+            </div>
+          </div>
+          <div className="site-mobile-menu-body" />
+        </div>
+        <Header />
+        <Content />
+      </div>
+      <Footer />
     </div>
   );
 }
