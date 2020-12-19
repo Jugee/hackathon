@@ -1,3 +1,5 @@
-.mb-3 .text-white .submenu {
-  color: red !important;
+@media screen and (min-width: 680px) {
+  .subChart {
+    width: "100%";
+  }
 }

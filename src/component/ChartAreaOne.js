@@ -214,6 +214,7 @@ export default function ChartAreaOne() {
         width: "100%",
         borderRadius: "10px",
         overflow: "hidden",
+        
       }}
     ></div>
   );
